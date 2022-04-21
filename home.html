@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="./css/home.css">
+  <link rel="stylesheet" type="text/css" href="./css/navBodyFooterFont.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+
+  <div class="menuB" onclick="showPopup()"><img src="images/home/menuB.png" width="28px"></div>
+  <nav class="full-screen hidden">
+    <img id="cross" onclick="closePopup()" src="images/home/cross.png" width="20px">
+    <ul id="navLinks">
+      <div class="aDiv">
+        <li><a href=#>Home</a></li>
+      </div>
+      <!-- <div id="currentL"><li><a href=#>Home</a></li></div> -->
+      <div id="worksBn" class="dropdown">
+        <div class="dropbtn aDiv">
+          <li onclick="closePopup()"><a>Works</a></li>
+        </div>
+        <div class="dropdown-content">
+          <a href="photo.html">Photography</a>
+          <a href="interact.html">Interactive Graphics</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </div>
+      <div class="aDiv">
+        <div id="pfbtn">
+          <li onclick="closePopup()"><a>Profile</a></li>
+        </div>
+      </div>
+    </ul>
+    <footer>
+      <ul id="footer_items">
+        <li>&copy;2021</li>
+        <li><i class="far fa-envelope"></i>&nbsp&nbspxn18@duke.edu</li>
+        <li><i class="fab fa-instagram"></i>&nbsp&nbsp<a href="https://www.instagram.com/carrot_line_/"
+            target="_blank">Caroline Ning</a></li>
+      </ul>
+    </footer>
+  </nav>
+
+  <div id="greeting">
+    <div id="hi">Hi.</div>
+    <div id="colorBlock"></div>
+    <div id="intro">
+      <p>I'm Caroline Ning.</p>
+      <p>I'm an MA student studying digital humanities at Duke University.</p>
+    </div>
+  </div>
+
+  <div id="works" name="works">
+    <div id="collage"><img src="images/collage.png"></div>
+    <div id="navi">
+      <!-- <div id="nav1"><a href="photo.html">—Photography—</a></div>
+      <div id="nav3"><a href="interact.html">—Interactive Graphics—</a></div>
+      <div id="nav2"><a href="projects.html">—Projects—</a></div> -->
+      <div id="nav1"><a href="photo.html">—Photography—</a><br><a href="interact.html">—Interactive Graphics—</a></div>
+      <div id="nav2"><a href="projects.html">—Projects—</a></div>
+      <!-- <div id="test"><a href="photo.html">—Photography—</a></div>
+      <div id="temp"><a href="interact.html">—Interactive Graphics—</a></div>
+      <div id="try"><a href="projects.html">—Projects—</a></div> -->
+
+    </div>
+  </div>
+
+  <div id="profile" name="profile">
+    <div id="features">
+      <div id="name">Caroline Ning</div>
+      <p><span class="subT">About Me: </span>A <a href="https://space.bilibili.com/43120037" target="_blank">Bilibili
+          Vlogger</a>, Museum & Musical & Film lover, Former Journalist</p>
+      <p><span class="subT">Advanced: </span>JavaScript, HTML/CSS, p5.js, ml5</p>
+      <p><span class="subT">Proficient: </span>React.js</p>
+      <p><span class="subT">Developing: </span>Node.js</p>
+    </div>
+    <div id="pfimg">
+      <img src="images/photo.jpg">
+    </div>
+
+  </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

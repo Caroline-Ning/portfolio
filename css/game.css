@@ -1,0 +1,95 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+#intro {
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #777;
+  transition: all 2s;
+  width: 80%;
+}
+.noOpacity {
+  opacity: 0;
+}
+.animation {
+  opacity: 1;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+}
+h1 {
+  font-size: 1.5rem;
+  height: 34px;
+  color: rgb(34, 34, 34);
+}
+#title img {
+  width: 100px;
+  height: 8px;
+  margin-bottom: 50px;
+}
+#title {
+  width: 400px;
+}
+#gameWrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.media {
+  width: 100%;
+  text-align: center;
+}
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.game a {
+  color: #b07175;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.game {
+  color: #b07175;
+}
+.game a:hover {
+  text-decoration: underline;
+}
+.last {
+  margin-bottom: 100px;
+}
+.game p {
+  color: #777;
+  font-size: 0.8rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.media img {
+  height: 250px;
+}
+video {
+  height: 250px;
+}

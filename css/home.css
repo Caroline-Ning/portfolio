@@ -1,0 +1,122 @@
+/* Klee One */
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&family=Lato:wght@300&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poiret+One&display=swap");
+/*Londrina Outline dramatic*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+body{
+    font-family: "Josefin Sans", sans-serif;
+}
+#colorBlock {
+  background-color: #9c8fb5;
+  height: 650px;
+  width: 44%;
+  z-index: -999;
+  transition: width ease-in 1s;
+}
+#colorBlock:hover {
+  width: 100%;
+}
+#greeting {
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+#hi {
+  position: absolute;
+  top: 220px;
+  left: 360px;
+  z-index: 999;
+  color: white;
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+}
+#intro {
+  position: absolute;
+  font-size: 0.9rem;
+  top: 248px;
+  left: 439px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Klee One",sans-serif; */
+  /* font-weight: bolder; */
+}
+#works {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+#works img {
+  width: 90%;
+}
+#collage {
+  margin-left: 10px;
+ margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+#navi a {
+  letter-spacing: 0.1rem;
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+}
+#navi a:hover{
+    color:#9c8fb5;
+}
+#nav1{
+  margin-top: 300px;
+}
+
+/* #test{  */
+  /* margin-left: 40px; */
+  /* margin-top: 660px; */
+  /* margin-bottom: 15px; */
+/* } */
+/* #temp{
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+#try{
+  margin-bottom: 15px;
+  margin-left: 40px;
+} */
+
+#profile{
+  display: grid;
+  grid-template-columns: 70% auto;
+  line-height: 2.5;
+  letter-spacing: 0.015rem;
+  margin-top: 40px;
+  margin-bottom: 150px;
+
+}
+#profile img{
+  width: 90%;
+}
+#profile p{
+  color:#777;
+}
+#profile a{
+  color:#777;
+  text-decoration: underline;
+}
+#profile a:hover{
+  color:#b5b5b5 ;
+}
+#pfimg{
+  margin-left: -25px;
+}
+#features{
+  padding-left: 50px;
+}
+.subT{
+  color: #b07175;
+}
+#name{
+  font-family:'futura', sans-serif;
+  color:rgb(85, 85, 85);
+  margin-bottom: 20px;
+  letter-spacing: 0.2rem;
+}
+
