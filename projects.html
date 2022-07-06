@@ -9,6 +9,8 @@
   <!-- <link rel="stylesheet" type="text/css" href="./css/game.css"> -->
   <link rel="stylesheet" type="text/css" href="./css/navBodyFooterFont.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
     body {
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -60,7 +62,8 @@
     #gameWrap {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-row-gap: 60px;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
       margin-top: 50px;
       margin-bottom: 150px;
 
@@ -77,6 +80,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* justify-content: center; */
+      color: #b07175;
+      padding-top: 50px;
+      padding-bottom: 40px;
     }
 
 
@@ -91,12 +98,14 @@
       font-size: 0.9rem;
     }
 
-    .game {
-      color: #b07175;
-    }
+
 
     .game a:hover {
-      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .game:hover {
+      box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.1);
     }
 
     .last {
@@ -104,8 +113,9 @@
     }
 
     .game p {
+      font-family: "Nunito Sans", serif;
       color: #777;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     .name {
@@ -114,7 +124,14 @@
       justify-content: center;
       align-items: center;
       width: 400px;
-      text-align: center;
+      margin: 0 auto;
+      /* text-align: center; */
+    }
+
+    .info {
+      margin: 0 auto;
+      margin-top: 15px;
+      line-height: 1.8em;
     }
 
     .media img {
@@ -169,68 +186,126 @@
 
   <div id="gameWrap">
     <div class="game">
-      <div class="media"><img src="images/space.png" height="250px"></div>
-      <div class="name">
-        <div>🔹&nbsp<a href="https://space-community.herokuapp.com/" target="_blank">Space: Forum &
-            Community</a>
+      <a href="https://space-community.herokuapp.com/" target="_blank">
+        <div class="media"><img src="images/space.png" height="250px"></div>
+        <div class="name">
+          <div>🔹&nbspForum & Quiz App: SPACE
+          </div>
+          <div class="info">
+            <p>- Developed a full-stack web application with Forum and Quiz functionalities to form a close online
+              community.
+              <br>- Implemented authentication and authorization based on OAuth 2.0. Created an editable profile for
+              each
+              user.<br>- Designed the user interface and logo for the application, aiming for branding and attracting
+              potential users.<br><i>- Node | Express | SQLite | JavaScript | Pug | CSS | Photoshop | Figma</i>
+            </p>
+          </div>
         </div>
-        <p>A forum & community built with Node.js, Express, SQLite, JavaScript, Pug, and CSS.
-        </p>
-      </div>
+      </a>
     </div>
 
     <div class="game">
-      <div class="media"><img src="images/mind.jpg" height="250px"></div>
-      <div class="name">
-        <div>🌙&nbsp<a href="https://caroline-ning.github.io/peaceful-mind/" target="_blank">Peaceful Mind</a>
+      <a href="https://caroline-ning.github.io/peaceful-mind/" target="_blank">
+        <div class="media"><img src="images/mind.jpg" height="250px"></div>
+        <div class="name">
+          <div>🌙&nbspEmotion Visualization App: Peaceful Mind
+          </div>
+          <div class="info">
+            <p>- Created an AI-based stress-relief meditation web application that enabled emotion visualization.
+              <br>- Designed interactive generative artwork in JavaScript and translated expressions into real-time
+              artworks.<br>- Applied machine learning to the classification of facial expressions and transformed
+              technical results into in-depth topics.<br><i>- ml5 | p5.js | JavaScript | HTML | CSS</i>
+            </p>
+          </div>
         </div>
-        <p>A stress-relief application based on emotion visualization. Built with p5.js and ml5.
-          <br>Try changing your facial expression in the app!
-        </p>
-      </div>
+      </a>
     </div>
 
     <div class="game">
-      <div class="media"><img src="images/flappy.jpg" height="250px"></div>
-      <div class="name">
-        <div>👃&nbsp<a href="https://caroline-ning.github.io/flappy-nose/game.html" target="_blank">Flappy
-            Nose</a></div>
-        <p>Face as an interface.</p>
-      </div>
+      <a href="https://caroline-ning.github.io/retro/" target="_blank">
+        <div class="media"><img src="images/retro.png" height="250px"></div>
+        <div class="name">
+          <div>🔮&nbsp 3D Website: Art Movement-
+            Retrofuturism
+          </div>
+          <div class="info">
+            <p>- Developed a 3D Website built with Three.js and Vite.
+              <br>- Implemented theme and visual effects to deliver an introduction to the philosophy of Retrofuturism.
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
     <div class="game">
-      <div class="media"><img src="images/webDesign.jpg" height="250px"></div>
-      <div class="name">
-        <div>🌸&nbsp<a href="https://ukiyo-e.vercel.app/" target='_blank'>The
+      <a href="https://caroline-ning.github.io/flappy-nose/game.html" target="_blank">
+        <div class="media"><img src="images/flappy.jpg" height="250px"></div>
+        <div class="name">
+          <div>👃&nbsp AI-Based Game: Flappy
+            Nose
+          </div>
+          <div class="info">
+            <p>- Created a JavaScript game using AI model to track movement.
+              <br>- Designed the user interface and using the face as an interface.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="game">
+      <a href="https://ukiyo-e.vercel.app/" target="_blank">
+        <div class="media"><img src="images/webDesign.jpg" height="250px"></div>
+        <div class="name">
+          <div>🌸&nbsp React Web Design: The
             Floating
-            World of Ukiyo-e</a>
+            World of Ukiyo-e
+          </div>
+          <div class="info">
+            <p>- Designed the website with React. Provided introduction and inspiration about Japanese art.
+              <br>- Implemented interactive landing page with p5.js.
+            </p>
+          </div>
         </div>
-        <p>A web design project. Built with React.js and p5.js.</p>
-      </div>
+      </a>
     </div>
 
     <div class="game">
-      <div class="media"><img src="images/comfort.jpg" height="250px"></div>
-      <div class="name">
-        <div>💐&nbsp<a
-            href="https://www.figma.com/proto/l5Sk9Xy2hJe9cbr2TAfGEQ/Caroline---Comfort-Women-Prototype?node-id=2%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A3"
-            target="_blank">Prototype - Comfort Women</a></div>
-        <p>The marginalized issues and stories in the history of “comfort women”</p>
-      </div>
+      <a href="https://www.figma.com/proto/l5Sk9Xy2hJe9cbr2TAfGEQ/Caroline---Comfort-Women-Prototype?node-id=2%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A3"
+        target="_blank">
+        <div class="media"><img src="images/comfort.jpg" height="250px"></div>
+        <div class="name">
+          <div>💐&nbspFigma Prototype - Comfort Women Memorial
+          </div>
+          <div class="info">
+            <p>The marginalized issues and stories in the history of “comfort women”
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
     <div class="game">
-      <div class="media"><img src="images/moam.jpg" height="250px"></div>
-      <div class="name">
-        <div>🏞&nbsp<a href="https://caroline-ning.github.io/artwork-meme/" target="_blank">MOAM: Museum of
-            Art + Meme</a></div>
-        <p>When Art Becomes Memes</p>
-      </div>
+      <a href="https://caroline-ning.github.io/artwork-meme/" target="_blank">
+        <div class="media"><img src="images/moam.jpg" height="250px"></div>
+        <div class="name">
+          <div>🏞&nbspMOAM: Museum of
+            Art + Meme
+          </div>
+          <div class="info">
+            <p>- An Interpretation of Artwork Memes from the
+              Perspective of Postmodernism
+              <br>
+              - Identifies three dimensions: the collapse of metanarrative,
+              the potentially dissolved significance, and the reconstruction of emotional comfort.
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
 
-    <div class="game">
+    <!-- <div class="game">
       <div class="media"><img src="images/pose.jpg" height="250px"></div>
 
       <div class="name">
@@ -250,7 +325,7 @@
         <p>A p5.js Game</p>
       </div>
 
-    </div>
+    </div> -->
 
 
 
