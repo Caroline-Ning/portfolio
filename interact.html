@@ -2,75 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Interactive Graphics</title>
-    <link rel="stylesheet" type="text/css" href="./css/interact.css">
-    <link rel="stylesheet" type="text/css" href="./css/navBodyFooterFont.css">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <title>Interactive Graphics</title>
+  <link rel="stylesheet" type="text/css" href="./css/interact.css">
+  <link rel="stylesheet" type="text/css" href="./css/navBodyFooterFont.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
 <body>
-    <div class="menuB" onclick="showPopup()"><img src="images/home/menuPurple.png" width="28px"></div>
-    <nav class="full-screen hidden">
-      <img id="cross" onclick="closePopup()" src="images/home/cross.png" width="20px">
-      <ul id="navLinks">
-        <div class="aDiv"><li><a href="home.html">Home</a></li></div>
-        <!-- <div id="currentL"><li><a href=#>Home</a></li></div> -->
-        <div id="worksBn" class="dropdown">
-          <div class="dropbtn aDiv"><li onclick="closePopup()"><a href="home.html#works">Works</a></li></div>
-          <div class="dropdown-content">
-            <a href="photo.html">Photography</a>
-            <a href="interact.html">Interactive Graphics</a>
-            <a href="projects.html">Projects</a>
-          </div>
+  <div class="menuB" onclick="showPopup()"><img src="images/home/menuPurple.png" width="28px"></div>
+  <nav class="full-screen hidden">
+    <img id="cross" onclick="closePopup()" src="images/home/cross.png" width="20px">
+    <ul id="navLinks">
+      <div class="aDiv">
+        <li><a href="home.html">Home</a></li>
+      </div>
+      <!-- <div id="currentL"><li><a href=#>Home</a></li></div> -->
+      <div id="worksBn" class="dropdown">
+        <div class="dropbtn aDiv">
+          <li onclick="closePopup()"><a href="home.html#works">Works</a></li>
         </div>
-        <div class="aDiv"><li><a href="home.html#profile">Profile</a></li></div>
+        <div class="dropdown-content">
+          <a href="photo.html">Photo&Design</a>
+          <a href="interact.html">Interactive Graphics</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </div>
+      <div class="aDiv">
+        <li><a href="home.html#profile">Profile</a></li>
+      </div>
+    </ul>
+    <footer>
+      <ul id="footer_items">
+        <li>&copy;2021</li>
+        <li><i class="far fa-envelope"></i>&nbsp&nbspxn18@duke.edu</li>
+        <li><i class="fab fa-instagram"></i>&nbsp&nbsp<a href="https://www.instagram.com/carrot_line_/"
+            target="_blank">Caroline Ning</a></li>
       </ul>
-      <footer>
-        <ul id="footer_items">
-          <li>&copy;2021</li>
-          <li><i class="far fa-envelope"></i>&nbsp&nbspxn18@duke.edu</li>
-          <li><i class="fab fa-instagram"></i>&nbsp&nbsp<a href="https://www.instagram.com/carrot_line_/" target="_blank">Caroline Ning</a></li>
-        </ul>
-      </footer>
-    </nav>
+    </footer>
+  </nav>
 
-    <div id="intro" class="noOpacity">
-        <div id="title">
-            <h1>Interactive Graphics</h1><img src="images/interactive/wave.png">
-        </div>
-        <p>Works on this page are written in P5.js, a JavaScrip Library.</p>
+  <div id="intro" class="noOpacity">
+    <div id="title">
+      <h1>Interactive Graphics</h1><img src="images/interactive/wave.png">
     </div>
-    <div id="anchors">
-        <div id="line1">
-            <!-- 400*400 -->
-            <div id="cyber"><a href="https://preview.p5js.org/CarolineNing/embed/S0-WOaFCT" target="target">Cyber Seaside</a></div>
-            <!-- 400*642 -->
-            <div id="impre"><a href="https://preview.p5js.org/CarolineNing/embed/e9VO49tlZ" target="target">New Impressionism, Sunrise
-                Sunrise</a></div>
-            <!-- 500*500 -->
-            <div id="circle"><a href="https://preview.p5js.org/CarolineNing/embed/AeTrfR4PM" target="target">Magic Circle</a></div>
-        </div>
-        <div id="line2">
-            <!-- 390*560 -->
-            <div id="memory"><a href="https://preview.p5js.org/CarolineNing/embed/zfwFDXksm" target="target">A False Family Memory</a></div>
-            <!-- 663*400 -->
-            <div id="mona"><a href="https://preview.p5js.org/CarolineNing/embed/SlM-QYZ1S" target="target">Distorted Monalisa</a></div>
-            <!-- 500*500 -->
-            <div id="eyeball"><a href="https://preview.p5js.org/CarolineNing/embed/PHqV7LMMf" target="target">Eyeball Experiment</a></div>
-            <!-- 600*400 -->
-            <div id="fuji"><a href="https://preview.p5js.org/CarolineNing/embed/XZE11nEze" target="target">A thousand types of Fuji</a></div>
-        </div>
+    <p>Works on this page are written in P5.js, a JavaScrip Library.</p>
+  </div>
+  <div id="anchors">
+    <div id="line1">
+      <!-- 400*400 -->
+      <div id="cyber"><a href="https://preview.p5js.org/CarolineNing/embed/S0-WOaFCT" target="target">Cyber Seaside</a>
+      </div>
+      <!-- 400*642 -->
+      <div id="impre"><a href="https://preview.p5js.org/CarolineNing/embed/e9VO49tlZ" target="target">New Impressionism,
+          Sunrise
+          Sunrise</a></div>
+      <!-- 500*500 -->
+      <div id="circle"><a href="https://preview.p5js.org/CarolineNing/embed/AeTrfR4PM" target="target">Magic Circle</a>
+      </div>
+    </div>
+    <div id="line2">
+      <!-- 390*560 -->
+      <div id="memory"><a href="https://preview.p5js.org/CarolineNing/embed/zfwFDXksm" target="target">A False Family
+          Memory</a></div>
+      <!-- 663*400 -->
+      <div id="mona"><a href="https://preview.p5js.org/CarolineNing/embed/SlM-QYZ1S" target="target">Distorted
+          Monalisa</a></div>
+      <!-- 500*500 -->
+      <div id="eyeball"><a href="https://preview.p5js.org/CarolineNing/embed/PHqV7LMMf" target="target">Eyeball
+          Experiment</a></div>
+      <!-- 600*400 -->
+      <div id="fuji"><a href="https://preview.p5js.org/CarolineNing/embed/XZE11nEze" target="target">A thousand types of
+          Fuji</a></div>
+    </div>
 
-    </div>
-    <div id="iframeDiv">
-        <iframe id="iframe" src="https://preview.p5js.org/CarolineNing/embed/S0-WOaFCT" name="target"></iframe>
-    </div>
-    <script src="js/titlewrap.js"></script>
-    <script src="js/interact.js"></script>
-    <script src="js/popup.js"></script>
+  </div>
+  <div id="iframeDiv">
+    <iframe id="iframe" src="https://preview.p5js.org/CarolineNing/embed/S0-WOaFCT" name="target"></iframe>
+  </div>
+  <script src="js/titlewrap.js"></script>
+  <script src="js/interact.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
